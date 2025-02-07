@@ -1,0 +1,3 @@
+<view class="search-bar">
+  <input class="search-input" placeholder="搜索地点、车位" bindinput="onInput" />
+</view> 

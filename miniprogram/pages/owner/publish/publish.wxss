@@ -1,0 +1,16 @@
+.container {
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} 

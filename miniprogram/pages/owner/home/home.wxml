@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="header">
+    <view class="back-btn" bindtap="onBackToIndex">
+      <view class="switch-icon"></view>
+    </view>
+    <text class="header-title">出租方首页</text>
+  </view>
+
+  <view class="owner-info card">
+    <text class="info-item">姓名: {{ownerName}}</text>
+    <text class="info-item">联系方式: {{contact}}</text>
+  </view>
+  <view class="parking-list">
+    <block wx:for="{{parkings}}" wx:key="id">
+      <view class="parking-card card" bindtap="onParkingTap" data-id="{{item.id}}">
+        <text class="parking-name">{{item.name}}</text>
+        <text class="parking-status">{{item.status}}</text>
+        <text class="parking-earnings">今日收益: {{item.earnings}}</text>
+      </view>
+    </block>
+  </view>
+</view> 

@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="search-header">
+    <input type="text" placeholder="搜索停车位" bindinput="onSearchInput"/>
+  </view>
+  <view class="filter-bar">
+    <view class="filter-item" bindtap="onFilterTap" data-type="distance">距离</view>
+    <view class="filter-item" bindtap="onFilterTap" data-type="price">价格</view>
+    <view class="filter-item" bindtap="onFilterTap" data-type="time">时间</view>
+  </view>
+  <view class="search-results">
+    <!-- 搜索结果列表 -->
+  </view>
+</view> 

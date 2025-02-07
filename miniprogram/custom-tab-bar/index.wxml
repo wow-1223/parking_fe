@@ -1,0 +1,20 @@
+<view class="tab-bar">
+  <block wx:if="{{isUserMode}}">
+    <view wx:for="{{userList}}" 
+          wx:key="pagePath" 
+          class="tab-bar-item {{selected === index ? 'active' : ''}}"
+          bindtap="switchTab" 
+          data-path="{{item.pagePath}}">
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+  <block wx:else>
+    <view wx:for="{{ownerList}}" 
+          wx:key="pagePath" 
+          class="tab-bar-item {{selected === index ? 'active' : ''}}"
+          bindtap="switchTab" 
+          data-path="{{item.pagePath}}">
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+</view> 

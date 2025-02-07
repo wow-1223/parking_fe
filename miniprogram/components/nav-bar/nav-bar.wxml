@@ -1,0 +1,9 @@
+<view class="nav-bar" style="padding-top: {{statusBarHeight}}px">
+  <view class="nav-content">
+    <view class="back-btn" bindtap="onBack">
+      <view class="back-icon"></view>
+      <text>返回</text>
+    </view>
+    <text class="title">{{title}}</text>
+  </view>
+</view> 

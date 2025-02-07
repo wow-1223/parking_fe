@@ -1,0 +1,13 @@
+.container {
+  padding: 10px;
+}
+
+.booking-form {
+  margin-bottom: 20px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+} 

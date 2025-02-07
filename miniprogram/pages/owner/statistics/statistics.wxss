@@ -1,0 +1,17 @@
+.container {
+  padding: 10px;
+}
+
+.chart {
+  margin-bottom: 10px;
+}
+
+.earnings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.earning-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+} 

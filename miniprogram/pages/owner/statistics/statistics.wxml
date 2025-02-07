@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="chart">
+    <!-- 图表展示 -->
+    <text>收益图表</text>
+  </view>
+  <view class="earnings-list">
+    <block wx:for="{{earnings}}" wx:key="id">
+      <view class="earning-item">
+        <text>订单编号: {{item.id}}</text>
+        <text>金额: {{item.amount}}</text>
+      </view>
+    </block>
+  </view>
+</view> 

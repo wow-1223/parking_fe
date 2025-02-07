@@ -1,0 +1,37 @@
+.nav-bar {
+  background: var(--primary-blue);
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.back-icon {
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  margin-right: 4px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 500;
+} 

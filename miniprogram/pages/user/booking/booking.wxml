@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="booking-form">
+    <view class="form-item">
+      <text>预订时间</text>
+      <picker mode="time" bindchange="onTimeChange">
+        <view>选择时间</view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <text>停车时长</text>
+      <input type="number" placeholder="请输入停车时长"/>
+    </view>
+  </view>
+  <button bindtap="onSubmit">确认预订</button>
+</view> 

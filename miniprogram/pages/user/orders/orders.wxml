@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="tabs">
+    <button bindtap="onTabChange" data-tab="pending">待使用</button>
+    <button bindtap="onTabChange" data-tab="used">已使用</button>
+    <button bindtap="onTabChange" data-tab="cancelled">已取消</button>
+  </view>
+  <view class="order-list">
+    <block wx:for="{{orders}}" wx:key="id">
+      <view class="order-item" bindtap="onOrderTap" data-id="{{item.id}}">
+        <text>{{item.name}}</text>
+        <text>{{item.time}}</text>
+        <text>{{item.amount}}</text>
+      </view>
+    </block>
+  </view>
+</view> 

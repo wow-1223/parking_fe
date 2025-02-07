@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="form">
+    <input placeholder="车位名称" bindinput="onNameInput" />
+    <input placeholder="车位位置" bindinput="onLocationInput" />
+    <input placeholder="价格" bindinput="onPriceInput" />
+    <button bindtap="onChooseLocation">选择位置</button>
+    <button bindtap="onUploadImage">上传图片</button>
+  </view>
+  <button bindtap="onSubmit">提交发布</button>
+</view> 

@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="user-info">
+    <image class="avatar" src="{{avatar}}" />
+    <text class="nickname">{{nickname}}</text>
+  </view>
+  <view class="menu">
+    <button bindtap="onMenuTap" data-page="settings">个人信息设置</button>
+    <button bindtap="onMenuTap" data-page="contact">联系客服</button>
+  </view>
+  <button class="logout" bindtap="onLogout">退出登录</button>
+</view> 

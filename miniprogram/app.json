@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/home/home",
+    "pages/user/orders/orders",
+    "pages/user/favorites/favorites",
+    "pages/user/profile/profile",
+    "pages/user/search/search",
+    "pages/user/detail/detail",
+    "pages/user/booking/booking",
+    "pages/owner/home/home",
+    "pages/owner/orders/orders",
+    "pages/owner/publish/publish",
+    "pages/owner/statistics/statistics",
+    "pages/owner/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2F80ED",
+    "navigationBarTitleText": "共享停车位",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#718096",
+    "selectedColor": "#2F80ED",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/user/home/home",
+        "text": "用户首页"
+      },
+      {
+        "pagePath": "pages/user/orders/orders",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/user/favorites/favorites",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/user/profile/profile",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/owner/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/owner/orders/orders",
+        "text": "订单管理"
+      },
+      {
+        "pagePath": "pages/owner/publish/publish",
+        "text": "发布车位"
+      },
+      {
+        "pagePath": "pages/owner/statistics/statistics",
+        "text": "收益统计"
+      },
+      {
+        "pagePath": "pages/owner/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于查找附近的停车位"
+    }
+  }
+} 

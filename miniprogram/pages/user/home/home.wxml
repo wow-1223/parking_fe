@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="header">
+    <view class="back-btn" bindtap="onBackToIndex">
+      <view class="switch-icon"></view>
+    </view>
+    <view class="search-bar">
+      <input class="search-input" 
+             type="text" 
+             placeholder="搜索停车位" 
+             bindinput="onSearch"/>
+    </view>
+  </view>
+
+  <swiper class="banner" 
+          indicator-dots="{{true}}" 
+          autoplay="{{true}}" 
+          interval="{{3000}}" 
+          duration="{{500}}">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item bindtap="onBannerTap" data-id="{{item.id}}">
+        <!-- TODO: 添加轮播图图片 -->
+        <!-- <image src="{{item.image}}" class="banner-image" mode="aspectFill"/> -->
+        <view class="banner-title">{{item.title}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="title">附近停车位</view>
+  <view class="parking-list">
+    <block wx:for="{{parkingSpots}}" wx:key="id">
+      <view class="parking-card" bindtap="onParkingTap" data-id="{{item.id}}">
+        <!-- TODO: 添加停车位图片 -->
+        <!-- <image class="thumbnail" src="{{item.image}}" mode="aspectFill"/> -->
+        <view class="info">
+          <text class="location">{{item.location}}</text>
+          <text class="price">¥{{item.price}}/小时</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view> 

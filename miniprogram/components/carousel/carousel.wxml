@@ -1,0 +1,12 @@
+<swiper class="carousel" 
+        indicator-dots="{{true}}" 
+        autoplay="{{true}}" 
+        interval="{{3000}}" 
+        duration="{{500}}">
+  <block wx:for="{{items}}" wx:key="id">
+    <swiper-item bindtap="onItemTap" data-id="{{item.id}}">
+      <image src="{{item.image}}" class="carousel-image" mode="aspectFill"/>
+      <view class="carousel-title">{{item.title}}</view>
+    </swiper-item>
+  </block>
+</swiper> 

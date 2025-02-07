@@ -1,0 +1,61 @@
+/* Notion风格的颜色变量 */
+page {
+  --primary-blue: #2F80ED;
+  --secondary-blue: #4F4FD9;
+  --light-blue: #E8F1FC;
+  --text-primary: #2C3E50;
+  --text-secondary: #718096;
+  --background: #FFFFFF;
+  --divider: #E2E8F0;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 通用容器样式 */
+.container {
+  padding: 24px;
+}
+
+/* 通用卡片样式 */
+.card {
+  background: var(--background);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+/* 通用按钮样式 */
+.btn {
+  background: var(--primary-blue);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 16px 0;
+  transition: all 0.3s ease;
+}
+
+.btn:active {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+/* 通用标题样式 */
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+/* 通用分割线 */
+.divider {
+  height: 1px;
+  background-color: var(--divider);
+  margin: 16px 0;
+} 

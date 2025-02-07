@@ -1,0 +1,11 @@
+<view class="container">
+  <block wx:for="{{favorites}}" wx:key="id">
+    <view class="favorite-item" bindtap="onFavoriteTap" data-id="{{item.id}}">
+      <image class="thumbnail" src="{{item.image}}" />
+      <view class="info">
+        <text class="name">{{item.name}}</text>
+        <text class="price">{{item.price}}/小时</text>
+      </view>
+    </view>
+  </block>
+</view> 

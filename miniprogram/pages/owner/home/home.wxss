@@ -1,0 +1,104 @@
+@import "../../../styles/global.wxss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--primary-blue);
+}
+
+.back-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.switch-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.switch-icon::before,
+.switch-icon::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background: white;
+  border-radius: 1px;
+  top: 50%;
+  left: 50%;
+}
+
+.switch-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.switch-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header-title {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.container {
+  padding-top: 64px;
+  padding: 24px;
+}
+
+.owner-info {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  padding: 8px 0;
+  color: var(--text-primary);
+}
+
+.parking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.parking-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.parking-card:active {
+  transform: translateY(2px);
+}
+
+.parking-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.parking-status {
+  color: var(--text-secondary);
+}
+
+.parking-earnings {
+  color: var(--primary-blue);
+  font-weight: 500;
+} 

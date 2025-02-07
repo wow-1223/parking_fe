@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="welcome">
+    <text>欢迎使用共享停车位小程序</text>
+  </view>
+  <view class="options">
+    <button bindtap="navigateToUser" hover-class="button-hover">进入用户端</button>
+    <button bindtap="navigateToOwner" hover-class="button-hover">进入出租方端</button>
+  </view>
+</view>

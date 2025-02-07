@@ -1,0 +1,19 @@
+.container {
+  padding: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+} 
